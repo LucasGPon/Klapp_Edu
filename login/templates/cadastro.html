@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klapp Edu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body style="background-color:#fff873">
+<link rel="stylesheet" href="/cadastro.css">
+
+<div class="position-absolute top-50 start-50 translate-middle col-4" style="background-color:#0abab5">
+    <h2>Cadastro</h2>
+    <p>Esse formulário é necessário para você conseguir entrar e participar do Klapp Edu. Por favor, preencha com atenção.</p>
+    <form action="/action_page.php">
+        <div class="">
+            <label for="name" class="form-label">Nome:</label>
+            <input type="name" class="form-control" id="name" placeholder="Insira seu nome" name="name">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail" name="email">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="phone" class="form-label">Telefone:</label>
+            <input type="phone" class="form-control" id="phone" placeholder="Insira seu número de celular" name="phone">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="course" class="form-label">Curso:</label>
+            <input type="course" class="form-control" id="course" placeholder="Insira o nome do seu curso" name="course">
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Senha:</label>
+            <input type="password" class="form-control mb-3" id="pwd" placeholder="Insira uma senha válida" name="pswd">
+            <input type="password" class="form-control" id="confirm-pwd" placeholder="Confirme a senha" name="confirm-pwd">
+        </div>
+       
+        <a href="/login/" class="btn btn-success">Cadastrar</a>
+    </form>
+    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+crossorigin="anonymous"></script>
+
+</body>
+</html>
