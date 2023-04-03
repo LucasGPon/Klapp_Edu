@@ -1,3 +1,4 @@
 body {
-    background-image: url('../img/edu.jpg');
+    /* teste background-image: url('../img/edu.jpg'); */
+    background-color: red !important;
   }
